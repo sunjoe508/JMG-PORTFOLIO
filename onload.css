@@ -1,0 +1,51 @@
+/* Camera Loader Styles */
+.camera-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #071952;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.camera-loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.camera-loader .camera {
+    width: 80px;
+    height: 60px;
+    border: 5px solid #DD761C;
+    border-radius: 10px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.camera-loader .camera:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #DD761C;
+}
+
+.camera-loader .lens {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #333 0%, #666 100%);
+    transform: translate(-50%, -50%);
+}
