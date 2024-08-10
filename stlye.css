@@ -1,0 +1,102 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #36a6cc;
+    animation: colorShift 10s infinite; /* Added animation */
+}
+
+/* Animation for background color shift */
+@keyframes colorShift {
+    0% { background-color: #d419ce; }
+    10% {background-color: #DD761C;}
+    50% { background-color: #22d312; }
+    100% { background-color: #d6c50f; }
+    100% { background-color: #2ba0c6; }
+    100% { background-color: #e64326; }
+    100% { background-color: #9455e6; }
+    100% { background-color: #45d0d5; }
+
+}
+
+header {
+    background-color: #071952;
+    color: rgb(32, 154, 198);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#hero {
+    background-color: #071952;
+    color: rgb(229, 214, 10);
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+/* Initial section styling */
+.section {
+    padding: 4rem 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+}
+
+/* Lift effect on hover */
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #071952;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-pic {
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.list-inline-item {
+    background-color: #DD761C;
+    color: rgb(244, 236, 236);
+}
+
+.experience-item, .project-item {
+    background-color: rgb(67, 173, 226);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(79, 47, 47, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    background-color: #071952;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
